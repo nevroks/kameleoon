@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useMemo } from 'react';
 import { useSitesApi } from './apiHooks/useSitesApi';
 import { useTestsApi } from './apiHooks/useTestsApi';
 import { Test } from '@utils/api/testsApi';

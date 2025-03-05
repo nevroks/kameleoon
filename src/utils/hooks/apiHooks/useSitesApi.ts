@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { useFetch } from '../useFetch';
 import { testsApi } from '@utils/api/testsApi';
 import { sitesApi } from '@utils/api/sitesApi';

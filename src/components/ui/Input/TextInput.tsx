@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { DetailedHTMLProps, HTMLProps, InputHTMLAttributes } from 'react';
+import { DetailedHTMLProps, InputHTMLAttributes } from 'react';
 import styles from './style.module.css';
 
 type TextInputProps = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> & {
