@@ -1,0 +1,18 @@
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 95px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.Button.inactive {
+    background: rgb(125, 125, 125);
+}
+
+.Button.active {
+    border: 1px solid rgb(46, 229, 172);
+    background: rgb(46, 229, 172);
+}

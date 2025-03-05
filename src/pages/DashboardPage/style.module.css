@@ -1,0 +1,92 @@
+.DashboardPage {
+    min-height: 89dvh;
+}
+
+.DashboardPage-title {
+    margin-bottom: 40px;
+}
+
+.DashboardPage-searchInput {
+    display: grid;
+    grid-template-columns: 1fr 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DashboardPage-searchInput-search {
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+}
+
+.DashboardPage-searchInput-search input {
+    width: 100%;
+}
+
+.DashboardPage-noResults {
+    min-height: 76dvh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+    justify-content: center
+}
+
+
+.DashboardPage-results-table {
+    min-height: calc(76dvh - 30px);
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+
+.DashboardPage-results-table tr th p {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    text-align: left;
+}
+
+
+
+.DashboardPage-results-table-sortArrow {
+    transition: all 0.2s ease-in-out;
+}
+
+.DashboardPage-results-table-sortArrow.asc {}
+
+.DashboardPage-results-table-sortArrow.desc {
+    rotate: 180deg;
+}
+
+.DashboardPage-results-table-body {}
+
+.DashboardPage-results-table-body-row {
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+
+}
+
+.DashboardPage-results-table-body-row:hover {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.DashboardPage-results-table-body-row-border {
+    width: 4px;
+}
+
+.DashboardPage-results-table-body-row-border.market {
+    background-color: #E14165;
+}
+
+.DashboardPage-results-table-body-row-border.games {
+    background-color: #8686FF;
+}
+
+.DashboardPage-results-table-body-row-border.delivery {
+    background-color: #C2C2FF;
+}
