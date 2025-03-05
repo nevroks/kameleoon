@@ -152,10 +152,10 @@ const DashboardPage = () => {
                                         {test.name}
                                     </td>
                                     <td>{test.type}</td>
-                                    <td className={classNames('',{
-                                        'text-error' : test.status === 'STOPPED',
-                                        'text-success' : test.status === 'ONLINE',
-                                        'text-warning' : test.status === 'PAUSED',
+                                    <td className={classNames('', {
+                                        'text-error': test.status === 'STOPPED',
+                                        'text-success': test.status === 'ONLINE',
+                                        'text-warning': test.status === 'PAUSED',
                                     })}>{test.status}</td>
                                     <td><a href={test.siteUrl}>{deleteUrls(test.siteUrl)}</a></td>
                                     {test.status === "DRAFT" ?
@@ -165,7 +165,11 @@ const DashboardPage = () => {
                                             </Link>
                                         </td>
                                         :
-                                        <td><Button text="Results" variant="active" /></td>
+                                        <td>
+                                            <Link to={`/results/${test.id}`}>
+                                                <Button text="Results" variant="active" />
+                                            </Link>
+                                        </td>
                                     }
 
                                 </tr>
